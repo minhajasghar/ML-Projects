@@ -10,11 +10,8 @@ This project predicts whether a person has heart disease or not based on various
 ## How to run this project:
 1. Clone the repository or download the files to your local system.
 2. Ensure you have **Python 3.x** installed.
-3. Install the necessary libraries by running the following command:
     ```
-    pip install -r requirements.txt
-    ```
-4. Run the `predict_heart_disease.py` file to train the models and make predictions.
+3. Run the `predict_heart_disease.py` file to train the models and make predictions.
     ```
     python predict_heart_disease.py
     ```
