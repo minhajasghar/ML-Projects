@@ -10,7 +10,7 @@ This repository contains various Machine Learning projects that I have worked on
 More projects will be added soon! Stay tuned.  
 
 ## 💡 How to Use  
-- Clone the repository:  
+1. Clone the repository:  
 git clone https://github.com/minhajasghar/ML-Projects.git
 2. Navigate to the project folder you want to explore.
 3. Follow the instructions in its **README.md**.
