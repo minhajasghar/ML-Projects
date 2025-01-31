@@ -14,9 +14,9 @@ This project predicts whether a person has heart disease or not based on various
     ```
     pip install -r requirements.txt
     ```
-4. Run the `heart_disease_model.py` file to train the models and make predictions.
+4. Run the `predict_heart_disease.py` file to train the models and make predictions.
     ```
-    python heart_disease_model.py
+    python predict_heart_disease.py
     ```
 
 ## Dependencies:
