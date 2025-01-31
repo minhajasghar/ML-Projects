@@ -3,8 +3,8 @@
 This project predicts whether a person has heart disease or not based on various medical parameters. The dataset used contains multiple features like age, cholesterol level, resting blood pressure, maximum heart rate achieved, and other relevant features. Three machine learning models are applied to solve the problem: Logistic Regression, Random Forest, and Support Vector Machine.
 
 ## Files in this repository:
-1. **heart_disease_report.docx** - A detailed project report with analysis and findings.
-2. **heart_disease_model.py** - Python code for training and predicting heart disease using various machine learning algorithms.
+1. **project_report.pdf** - A detailed project report with analysis and findings.
+2. **predict_heart_disease.py** - Python code for training and predicting heart disease using various machine learning algorithms.
 3. **README.md** - Project overview and setup instructions.
 
 ## How to run this project:
