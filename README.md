@@ -12,6 +12,11 @@ This repository contains various Machine Learning projects that I have worked on
    - Uses NLP and feature extraction techniques for accurate detection.  
    - Located in the `Phish_Guard` folder.  
 
+3. **Student Performance Prediction** 🎓📊  
+   - A regression model that predicts students' **exam scores** based on input features like study time, parental education, and past performance.  
+   - Uses **Linear Regression** for prediction.  
+   - Located in the `Student_Performance_Prediction` folder.  
+
 More projects will be added soon! Stay tuned.  
 
 ## 💡 How to Use  
