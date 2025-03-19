@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Prediction</title>
+    <link rel="stylesheet" href="{{ url_for('static',filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <div class="form-container">
+            <div class="logo">
+                <span>☀️</span> <!-- Sun Emoji for Weather Theme -->
+            </div>
+            <h2>Weather Prediction</h2>
+            <p class="subheading">Enter the weather data to get the predicted condition</p>
+            <form action="/predict" method="POST" id="predictionForm">
+                <div class="input-group">
+                    <label for="date">Date</label>
+                    <input type="date" id="date" name="date" required>
+                </div>
+                <div class="input-group">
+                    <label for="precipitation">Precipitation (mm)</label>
+                    <input type="number" step="0.01" id="precipitation" name="precipitation" placeholder="Enter precipitation" required>
+                </div>
+                <div class="input-group">
+                    <label for="temp_max">Max Temperature (°C)</label>
+                    <input type="number" step="0.1" id="temp_max" name="temp_max" placeholder="Enter max temperature" required>
+                </div>
+                <div class="input-group">
+                    <label for="temp_min">Min Temperature (°C)</label>
+                    <input type="number" step="0.1" id="temp_min" name="temp_min" placeholder="Enter min temperature" required>
+                </div>
+                <div class="input-group">
+                    <label for="wind">Wind Speed (km/h)</label>
+                    <input type="number" step="0.1" id="wind" name="wind" placeholder="Enter wind speed" required>
+                </div>
+                <div class="input-group">
+                    <label for="weather">Weather Condition</label>
+                    <select id="weather" name="weather" required>
+                        <option value="Sunny">Sunny</option>
+                        <option value="Cloudy">Cloudy</option>
+                        <option value="Rainy">Rainy</option>
+                        <option value="Stormy">Stormy</option>
+                        <option value="Snowy">Snowy</option>
+                    </select>
+                </div>
+                <button type="submit" class="submit-btn">Get Prediction</button>
+            </form>
+            <div id="predictionResult" class="result"></div>
+        </div>
+    </div>
+    
+    <script>
+        document.getElementById('predictionForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const formData = new FormData(this);
+            fetch('/predict', {
+                method: 'POST',
+                body: formData
+            })
+            .then(response => response.json())
+            .then(data => {
+                if (data.prediction) {
+                    document.getElementById('predictionResult').innerText = 'Predicted Weather: ' + data.prediction;
+                } else {
+                    document.getElementById('predictionResult').innerText = 'Error: ' + data.error;
+                }
+            });
+        });
+    </script>
+</body>
+</html>
