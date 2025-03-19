@@ -16,12 +16,12 @@ This repository contains various Machine Learning projects that I have worked on
 3. **Student Performance Prediction** 🎓📊  
    - A regression model that predicts students' **exam scores** based on input features like study time, parental education, and past performance.  
    - Uses **Linear Regression** for prediction.  
-   - Located in the `Student_Performance_Prediction` folder.  
+   - Located in the `Student Performance Prediction` folder.  
 
 4. **Weather Prediction App** ☁️🌦️  
    - A Flask-based web app that predicts weather conditions.  
    - Includes a **Flask API** and an **HTML/CSS** frontend.  
-   - Located in the `WeatherPredictionApp/` folder.  
+   - Located in the `Weather Prediction APP` folder.  
 
 More projects will be added soon! Stay tuned.  
 
