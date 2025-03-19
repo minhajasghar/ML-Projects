@@ -3,6 +3,7 @@
 This repository contains various Machine Learning projects that I have worked on. Each project includes datasets, code, and relevant reports.  
 
 ## 📂 Projects Included:  
+
 1. **Heart Disease Prediction** 🫀  
    - A classification model to predict heart disease using machine learning algorithms.  
    - Located in the `Heart Disease Prediction` folder.  
@@ -17,9 +18,20 @@ This repository contains various Machine Learning projects that I have worked on
    - Uses **Linear Regression** for prediction.  
    - Located in the `Student_Performance_Prediction` folder.  
 
+4. **Weather Prediction App** ☁️🌦️  
+   - A Flask-based web app that predicts weather conditions.  
+   - Includes a **Flask API** and an **HTML/CSS** frontend.  
+   - Located in the `WeatherPredictionApp/` folder.  
+
 More projects will be added soon! Stay tuned.  
 
 ## 💡 How to Use  
 1. Clone the repository:  
    ```bash
    git clone https://github.com/minhajasghar/ML-Projects.git
+   cd ML-Projects
+   ```
+2. Navigate to a project folder and follow the instructions in its README.  
+
+---
+Let me know if you need any modifications! 🚀  
