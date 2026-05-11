@@ -8,7 +8,7 @@ This repository contains various Machine Learning projects that I have worked on
    - A classification model to predict heart disease using machine learning algorithms.  
    - Located in the `Heart Disease Prediction` folder.  
 
-2. **Phish Guard (Phishing URL Detection)** 🔗
+2. **Phish Guard (Phishing URL Detection)** 
    - A machine learning model to classify URLs as **Safe** or **Phishing**.  
    - Uses NLP and feature extraction techniques for accurate detection.  
    - Located in the `Phish Guard Model` folder.  
